@@ -121,7 +121,7 @@ ul{
 .container2-flex{
   display:flex;
   flex-direction: row;
-  height: 100vh;
+  
 }
 .flex-item{
   width: 200px;
