@@ -1,0 +1,41 @@
+.wrapper{
+width: 100vw;
+height: 100vh;
+max-width: 100%;
+border:1px solid black;
+}
+
+/* clearfix e float  */
+
+.clearfix::after{
+  content: "";
+  display:table;
+  clear: both;
+}
+.left{
+  float: left;
+}
+
+
+.clearfix::after{
+  content: "";
+  display:table;
+  clear: both;
+}
+.right{
+  float: right;
+}
+/* end utility class */
+
+.navabar{
+width: 60px;
+height: 100%;
+border: 1px solid black;
+}
+
+.container{
+  height: 100%;
+  overflow-y: auto;
+  border:1px solid black;
+
+}
