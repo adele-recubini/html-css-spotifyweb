@@ -74,6 +74,8 @@ ul{
   flex-direction: column;
   height:100vh;
   justify-content:space-between;
+  overflow-x: auto;
+
 
 }
 
