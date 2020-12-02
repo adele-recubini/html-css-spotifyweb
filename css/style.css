@@ -121,7 +121,7 @@ ul{
 .container2-flex{
   display:flex;
   flex-direction: row;
-  
+
 }
 .flex-item{
   width: 200px;
@@ -133,6 +133,9 @@ ul{
 .film-list{
   width: 200px;
   height: 200px;
+}
+.film-title li{
+  display: inline-block;
 }
 
 
