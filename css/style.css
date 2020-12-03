@@ -75,6 +75,7 @@ ul{
   height: calc(100vh - 20px);
   justify-content:space-between;
   overflow-y: auto;
+
 }
 
 /* fine  navbar left*/
@@ -129,6 +130,7 @@ ul{
 .container2-flex{
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .flex-item{
   width: 200px;
@@ -204,6 +206,10 @@ h1{
 /* fine footer */
 
 /* media quesry */
-@media screen and (max-width: 991px){
-
-}
+/* @media screen and (max-width: 991px){
+  .container2-flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+} */
