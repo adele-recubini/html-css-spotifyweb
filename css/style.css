@@ -73,16 +73,20 @@ ul{
   float: left;
   width: calc(100% - 230px);
   height: 100%;
-  background-color: #777;
+  background-color:#141922;
   overflow-y: auto;
 }
 
 .content .generic-item {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border: 1px #000 solid;
   margin: 15px;
 }
+li{
+  list-style-type: none;
+}
+
 
 .call-to-action {
   width: calc(100% - 230px);
@@ -93,6 +97,7 @@ ul{
   padding-right: 50px;
   line-height: 90px;
   font-weight: bold;
+  background-color: black;
 }
 
 .call-to-action a {
@@ -118,8 +123,8 @@ ul{
   text-align: center;
   font-weight: bold;
   padding: 15px 0;
+  background-color: #141922;
 
-  background-color: black;
 }
 
 /* parte centrale  */
@@ -127,6 +132,7 @@ ul{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: calc(100% \ 6);
 }
 
 .film-list{
@@ -191,4 +197,23 @@ footer {
   width: 500px;
   border: 2px solid white;
   margin-top: 10px;
+}
+
+/* media query */
+@media screen and (max-width: 992px) {
+.container2-flex {
+    width: calc(100%\4 - 15px);
+  }
+.generic-item{
+  margin-top:20px;
+}
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+
+@media screen and (max-width: 576px){
+
 }
