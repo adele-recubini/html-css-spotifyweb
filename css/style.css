@@ -97,6 +97,7 @@ li{
   width: 100px;
   position: absolute;
   display:none;
+
 }
 .generic-item:hover .play{
   display: block;
@@ -220,6 +221,11 @@ footer {
   border: 1px solid white;
   margin-top: 10px;
   width: 200px;
+}
+.line2 ul{
+  display: inline-block;
+  border: 1px solid white;
+    width: 50px;
 }
 
 /* media query */
