@@ -101,13 +101,28 @@ li{
   display:none;
   top: 50%;
   left: 50%;
-   transform: translate(-50%, -50%);
-
+  transform: translate(-50%, -50%);
 
 }
 .generic-item:hover .play{
   display: block;
 }
+
+.button-line{
+  width: 100px;
+  border: 1px solid white;
+  position: absolute;
+  display: none;
+
+}
+.line-hover{
+  position:relative;
+}
+.line-hover:hover .button-line{
+display: block;
+}
+
+
 
 
 .call-to-action {
@@ -119,7 +134,9 @@ li{
   padding-right: 50px;
   line-height: 90px;
   font-weight: bold;
-
+}
+.opzioni{
+  line-height: 1.6;
 
 }
 
@@ -187,7 +204,10 @@ h1{
 }
 h6{
   color:#484C52;
+  font-size: 20px;
+  margin:20px 0;
 }
+
 /* hover per le scritte */
 p:hover{
   color:yellow;
@@ -205,7 +225,7 @@ footer {
   background: #333;
 }
 .footer-flex{
-  width: 100vw;
+  width: 100%;
   display:flex;
   flex-direction: row;
   justify-content:space-between;
@@ -328,18 +348,6 @@ footer {
     width: calc(100% - 100px);
     text-align: left;
   }
-  .content {
-  float: left;
-  width: calc(100% - 100px);
-  height: 100%;
-  background-color: #777;
-  overflow-y: auto;
-}
-.footer-flex{
- width: calc(100% - 100px);
-  display:flex;
-  flex-direction: row;
-  justify-content:space-between;
-}
+
 
 }
