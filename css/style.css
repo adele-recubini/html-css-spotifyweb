@@ -109,10 +109,11 @@ li{
 }
 
 .button-line{
-  width: 100px;
+  width: 50px;
   border: 1px solid white;
   position: absolute;
   display: none;
+  left:45px;
 
 }
 .line-hover{
