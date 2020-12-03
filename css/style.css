@@ -92,11 +92,16 @@ li{
 .generic-item{
   width: calc(100% / 6);
   border: 1px solid white;
+  position: relative;
 }
 .play{
   width: 100px;
   position: absolute;
   display:none;
+  top: 50%;
+  left: 50%;
+   transform: translate(-50%, -50%);
+
 
 }
 .generic-item:hover .play{
