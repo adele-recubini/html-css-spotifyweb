@@ -86,7 +86,7 @@ ul{
  width:100%;
  height:50px;
  position:fixed;
-  border:1px solid black;
+ background-color: #080B12;
 
 }
 .button-upgrade{
@@ -96,10 +96,14 @@ ul{
 .my-button{
  width: 200px;
  height: 50px;
- border: 1px solid black;
+ border: 1px solid white;
  float: right;
- vertical-align: middle;
+
 }
+.my-button a{
+  color:white;
+}
+
 
 /* fine navbar center */
 
@@ -206,10 +210,10 @@ h1{
 /* fine footer */
 
 /* media quesry */
-/* @media screen and (max-width: 991px){
+@media screen and (max-width: 991px){
   .container2-flex{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-} */
+}
