@@ -42,6 +42,7 @@ ul{
   display: inline-block;
   line-height: 1.6;
 }
+
 .playlist li {
   color:#717378;
   display: inline-block;
@@ -239,6 +240,16 @@ footer {
 
 
 /* media query */
+
+@media screen and (min-width: 991px){
+  .favicon img{
+    visibility: hidden;
+  }
+
+}
+
+
+
 @media screen and (max-width: 992px) {
 /* .container2-flex {
     width: calc(100%/4 - 15px);
@@ -246,9 +257,11 @@ footer {
 .generic-item{
   width: calc(100% / 4);
   margin-top: 100px;
-
-
 }
+.favicon img{
+  visibility: hidden;
+}
+
 }
 
 @media screen and (max-width: 768px){
@@ -256,14 +269,55 @@ footer {
     width: calc(100% / 2);
     margin-top: 100px;
 }
+  .favicon img{
+   visibility: hidden;
+}
+
+}
 
 
 @media screen and (max-width: 576px){
   /* .items-footer{
     width: calc(100% / 3);
   } */
-  .call-to-action {
-   text-align:left;
 
+ .main-nav{
+   width: 100px;
  }
+  .list{
+    visibility: hidden;
+  }
+  .liste{
+    visibility: hidden;
+  }
+  .logo img{
+    visibility: hidden;
+  }
+  .favicon img{
+    visibility: visible;
+    background-color: white;
+    margin-top: 0;
+  }
+  .home li {
+    visibility: hidden;
+  }
+  .list li:nth-child(even){
+    visibility: hidden;
+  }
+  .playlist{
+    visibility: hidden;
+  }
+
+  .home>li>i {
+    visibility: visible;
+   width: 50px;
+  }
+  .items-one{
+    width: 50px;
+  }
+  .call-to-action {
+    width: calc(100% - 100px);
+    text-align: left;
+  }
+
 }
