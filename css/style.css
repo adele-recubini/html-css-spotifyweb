@@ -87,6 +87,7 @@ ul{
  height:50px;
  position:fixed;
  background-color: #080B12;
+ z-index:-1;
 
 }
 .button-upgrade{
