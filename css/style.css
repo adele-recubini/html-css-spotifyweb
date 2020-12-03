@@ -1,37 +1,32 @@
-.wrapper{
-width: 100vw;
-height: 100vh;
-max-width: 100%;
-border:1px solid black;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* clearfix e float  */
-
-.clearfix::after{
-  content: "";
-  display:table;
-  clear: both;
+body {
+  font-family: Arial, sans-serif;
 }
-.left{
+
+#wrapper {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+main {
+  height: calc(100% - 90px);
+  background: black;
+}
+
+.main-nav {
+  background: black;
   float: left;
-}
-
-
-.clearfix::after{
-  content: "";
-  display:table;
-  clear: both;
-}
-.right{
-  float: right;
-}
-/* end utility class */
-/* navbar  left*/
-.navabar{
-width: 150px;
-
-border: 1px solid black;
-background-color: black;
+  width: 230px;
+  height: 100%;
+  overflow-y: hidden;
+  /* TODO: min-height? */
 }
 .logo{
   height: 40px;
@@ -68,58 +63,41 @@ ul{
   display: inline-block;
 }
 
-/* al container flex bisogna sempre dare un altezza è importante  */
-.container-flex{
-  display:flex;
-  flex-direction: column;
-  height: calc(100vh - 20px);
-  justify-content:space-between;
+.main-nav ul li {
+  margin: 15px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.content {
+  float: left;
+  width: calc(100% - 230px);
+  height: 100%;
+  background-color: #777;
   overflow-y: auto;
-
 }
 
-/* fine  navbar left*/
-
-/* navbar center */
-
-.navbar-center{
- width:96%;
- height:50px;
- position:fixed;
- background-color: #080B12;
- z-index:-1;
-
-}
-.button-upgrade{
- text-align:right;
- padding-right: 50px;
-}
-.my-button{
- width: 200px;
- height: 40px;
-border-radius: 10px;
- float: right;
- border: 1px solid white;
-
-}
-.my-button a{
-  color:white;
-  line-height: 40px;
-  padding: 0 10px;
+.content .generic-item {
+  width: 100px;
+  height: 100px;
+  border: 1px #000 solid;
+  margin: 15px;
 }
 
+.call-to-action {
+  width: calc(100% - 230px);
+  height: 90px;
+  background-color: rgba(0,0,0,.4);
+  position: fixed;
+  text-align: right;
+  padding-right: 50px;
+  line-height: 90px;
+  font-weight: bold;
+}
 
-/* fine navbar center */
-
-/* continer-main */
-
-.container-main{
-  height: calc(100vh - 70px);
-  overflow-y: auto;
-  border:1px solid black;
-  background-color: violet;
-  margin-top:50px;
-
+.call-to-action a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .list-type ul {
@@ -135,16 +113,20 @@ border-radius: 10px;
   color: #717378;
 }
 
+.main-content-nav {
+  margin-top: 90px;
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 0;
+
+  background-color: black;
+}
+
+/* parte centrale  */
 .container2-flex{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-.flex-item{
-  width: 200px;
-  /* height: 200px; */
-  border: 1px solid black;
-  padding:0 10px;
 }
 
 .film-list{
@@ -175,17 +157,11 @@ h6{
   color:#484C52;
 }
 
+/* fine parte centrale */
 
-/* fine container-main */
-
-/* footer */
-.footer{
-  width: 100vw;
-  height: 80px;
-  border:1px solid black;
-
-  background-color:#282828;
-
+footer {
+  height: 90px;
+  background: #333;
 }
 .footer-flex{
   display:flex;
@@ -215,10 +191,4 @@ h6{
   width: 500px;
   border: 2px solid white;
   margin-top: 10px;
-}
-
-/* fine footer */
-
-/* media query */
-
 }
