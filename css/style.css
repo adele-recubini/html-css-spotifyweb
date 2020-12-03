@@ -188,6 +188,15 @@ h1{
 h6{
   color:#484C52;
 }
+/* hover per le scritte */
+p:hover{
+  color:yellow;
+}
+.opzioni li:hover {
+  color:yellow;
+}
+
+/* fine hover le scritte */
 
 /* fine parte centrale */
 
@@ -319,5 +328,18 @@ footer {
     width: calc(100% - 100px);
     text-align: left;
   }
+  .content {
+  float: left;
+  width: calc(100% - 100px);
+  height: 100%;
+  background-color: #777;
+  overflow-y: auto;
+}
+.footer-flex{
+ width: calc(100% - 100px);
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
 
 }
