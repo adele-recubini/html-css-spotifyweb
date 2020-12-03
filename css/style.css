@@ -91,6 +91,15 @@ li{
 }
 .generic-item{
   width: calc(100% / 6);
+  border: 1px solid white;
+}
+.play{
+  width: 100px;
+  position: absolute;
+  display:none;
+}
+.generic-item:hover .play{
+  display: block;
 }
 
 
