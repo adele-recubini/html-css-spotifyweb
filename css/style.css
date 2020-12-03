@@ -222,11 +222,16 @@ footer {
   margin-top: 10px;
   width: 200px;
 }
-.line2 ul{
+.line2 li{
   display: inline-block;
   border: 1px solid white;
-    width: 50px;
+  width: 100px;
 }
+.line2{
+  border: 1px solid white;
+  width: 50px;
+}
+
 
 /* media query */
 @media screen and (max-width: 992px) {
