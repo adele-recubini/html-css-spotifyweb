@@ -26,9 +26,7 @@ main {
   width: 230px;
   height: 100%;
   overflow-y: hidden;
-  display:flex;
-  justify-content: space-between;
-  flex-direction: column;
+
   /* min-height: */
 }
 .logo{
@@ -43,7 +41,12 @@ ul{
   line-height: 1.6;
 }
 
-.playlist li {
+.playlist {
+  height: 50%;
+  overflow-y: auto;
+}
+
+.playlist-title li {
   color:#717378;
   display: inline-block;
 
@@ -53,11 +56,16 @@ ul{
   display: inline-block;
   line-height: 1.6;
 }
+
+.liste{
+}
+
 .liste li{
   color:#717378;
   list-style: none;
   line-height: 30px;
 }
+
 .download li{
   color:#717378;
   display: inline-block;
@@ -71,6 +79,12 @@ ul{
   margin: 15px;
   text-transform: uppercase;
   list-style: none;
+}
+.items-one{
+  height: calc(100% - 98px);
+}
+.items-two{
+  height: 98px;
 }
 
 .content {
@@ -338,7 +352,7 @@ color: white;
   .list li:nth-child(even){
     visibility: hidden;
   }
-  .playlist{
+  .playlist-title{
     visibility: hidden;
   }
 
