@@ -27,18 +27,16 @@ main {
   height: 100%;
   overflow-y: hidden;
 
-  /* min-height: */
 }
 .logo{
   height: 40px;
 }
-ul{
-  padding-left:5px;
-}
+
 .home li{
   color:#717378;
   display: inline-block;
   line-height: 1.6;
+  font-size: 15px;
 }
 
 .playlist {
@@ -55,9 +53,6 @@ ul{
   color:#717378;
   display: inline-block;
   line-height: 1.6;
-}
-
-.liste{
 }
 
 .liste li{
@@ -95,30 +90,61 @@ ul{
   overflow-y: auto;
 }
 
-.content .generic-item {
-  /* width: 200px; */
-  /* height: 200px; */
-  /* margin-right:5px; */
-}
+
 li{
   list-style-type: none;
 }
-.generic-item{
-  width: calc(100% / 6);
-  position: relative;
+/* creazione dei contenitori centrali e loro dimensionamento con l immagine */
+
+
+.container2-flex{
+  display:flex;
+  margin-left:15px;
+  flex-wrap: wrap;
 }
+
+.content .generic-item {
+  width: calc(100% / 6 - 15px);
+  margin-right: 15px;
+  margin-top: 15px;
+  max-width: 200px;
+}
+
+
+.film-list{
+  width: 100%;
+}
+/* fine creazione dei contenitore e del loro dimensionamento con l immagine  */
+
+/* creazione dellhover play sulle canzoni  */
 .play{
   width: 100px;
   position: absolute;
   display:none;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  right:3%;
   transform: translate(-50%, -50%);
-
 }
 .generic-item:hover .play{
   display: block;
+}
+.generic-item{
+  position: relative;
+}
+/* fine creazione dell hover sulle canzoni  */
 
+/* creazione dell hover per la linea su ozpioni */
+.opzioni{
+  line-height: 1.6;
+}
+.opzioni li{
+  display: inline-block;
+  padding: 0 10px;
+  vertical-align: middle;
+  color: #717378;
+}
+.opzioni li:hover {
+  color:yellow;
 }
 
 .button-line{
@@ -127,7 +153,6 @@ li{
   position: absolute;
   display: none;
   left:45px;
-
 }
 .line-hover{
   position:relative;
@@ -135,8 +160,7 @@ li{
 .line-hover:hover .button-line{
 display: block;
 }
-
-
+/*  fine creazione dell hover per la linea su ozpioni */
 
 
 .call-to-action {
@@ -149,10 +173,9 @@ display: block;
   line-height: 90px;
   font-weight: bold;
 }
-.opzioni{
-  line-height: 1.6;
 
-}
+
+/*  fine main-content-nav  */
 
 .call-to-action a {
   color: #fff;
@@ -168,12 +191,7 @@ display: block;
   text-align: center;
 
 }
-.opzioni li{
-  display: inline-block;
-  padding: 0 10px;
-  vertical-align: middle;
-  color: #717378;
-}
+
 
 .main-content-nav {
   margin-top: 90px;
@@ -185,17 +203,12 @@ display: block;
 }
 
 /* parte centrale  */
-.container2-flex{
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 
-}
-
-.film-list{
+/* non serve dare una grandezza all immagine si adatterà al 100% del contenitore  */
+/* .film-list{
   width: 200px;
   height: 200px;
-}
+} */
 .film-list-special{
 border-radius: 50%;
  padding: 0 20px;
@@ -226,11 +239,13 @@ h6{
 p:hover{
   color:yellow;
 }
-.opzioni li:hover {
-  color:yellow;
-}
+
 
 /* fine hover le scritte */
+
+/* trasform scale per il link */
+
+/* fine trasform scale per il link */
 
 /* fine parte centrale */
 
@@ -293,15 +308,10 @@ color: white;
 
 
 
-@media screen and (max-width: 992px) {
-/* .container2-flex {
-    width: calc(100%/4 - 15px);
-  } */
-.generic-item{
-  width: calc(100% / 4);
-  margin-top: 100px;
-  margin: 15px;
-}
+@media screen and (max-width: 991px) {
+  .content .generic-item {
+    width: calc(100% / 4 - 15px);
+  }
 .favicon img{
   visibility: hidden;
 }
@@ -309,10 +319,9 @@ color: white;
 }
 
 @media screen and (max-width: 767px){
-  .generic-item{
-    width: calc(100% / 2);
-    margin-top: 100px;
-}
+.content .generic-item {
+  width: calc(100% / 2 - 15px);
+  }
   .favicon img{
    visibility: hidden;
 }
@@ -321,13 +330,9 @@ color: white;
 
 
 @media screen and (max-width: 576px){
-  /* .items-footer{
-    width: calc(100% / 3);
-  } */
-  .generic-item{
-    width: calc(100% / 2);
-    margin-top: 100px;
-}
+.content .generic-item {
+  width: calc(100% / 2 - 15px);
+  }
 
  .main-nav{
    width: 100px;
@@ -367,6 +372,19 @@ color: white;
     width: calc(100% - 100px);
     text-align: left;
   }
+  .items-two{
+    visibility: hidden;
+  }
+  .line2{
+    visibility: hidden;
+  }
+  .content{
+    width: calc(100% - 100px);
+  }
+  .opzioni li{
+    float:left;
+
+   }
 
 
 }
