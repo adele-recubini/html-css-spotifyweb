@@ -265,10 +265,6 @@ p:hover{
 
 /* fine hover le scritte */
 
-/* trasform scale per il link */
-
-/* fine trasform scale per il link */
-
 /* fine parte centrale */
 
 footer {
@@ -301,17 +297,30 @@ color: white;
 .special{
   text-align: center;
 }
+.prograssion-bar{
+  border: 2px solid red;
+  width: 70px;
+}
+.minuti, .line{
+  display:inline-block;
+}
+span{
+  color: white;
+  padding:30px;
+}
 
 
 .line{
-  border: 1px solid white;
+  border: 2px solid white;
   margin-top: 10px;
   width: 200px;
+  border-radius: 20px;
+  display: inline-block;
 }
 .line2 li{
   display: inline-block;
   border: 1px solid white;
-  width: 100px;
+  width: 70px;
 }
 .line2{
   border: 1px solid white;
