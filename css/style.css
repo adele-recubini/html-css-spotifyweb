@@ -449,6 +449,9 @@ color: white;
   .items-footer>li>p{
     font-size: 10px;
   }
+  .items-footer>li{
+    padding: 0 5px;;
+  }
 
 
 }
