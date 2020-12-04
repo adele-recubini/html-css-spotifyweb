@@ -29,7 +29,7 @@ main {
   display:flex;
   justify-content: space-between;
   flex-direction: column;
-  /* TODO: min-height? */
+  /* min-height: */
 }
 .logo{
   height: 40px;
@@ -83,16 +83,14 @@ ul{
 
 .content .generic-item {
   /* width: 200px; */
-  height: 200px;
-  /* border: 1px #000 solid; */
-  /* margin: 15px; */
+  /* height: 200px; */
+  margin-right:5px;
 }
 li{
   list-style-type: none;
 }
 .generic-item{
   width: calc(100% / 6);
-  border: 1px solid white;
   position: relative;
 }
 .play{
@@ -106,6 +104,7 @@ li{
 }
 .generic-item:hover .play{
   display: block;
+
 }
 
 .button-line{
@@ -243,10 +242,10 @@ footer {
   height: 40px;
 }
 .items-footer li {
-  display: inline-block;
- vertical-align: middle;
-  padding: 0 10px;
-  color: white;
+display: inline-block;
+vertical-align: middle;
+padding: 0 10px;
+color: white;
 }
 .special{
   text-align: center;
@@ -287,6 +286,7 @@ footer {
 .generic-item{
   width: calc(100% / 4);
   margin-top: 100px;
+  margin: 15px;
 }
 .favicon img{
   visibility: hidden;
@@ -294,7 +294,7 @@ footer {
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .generic-item{
     width: calc(100% / 2);
     margin-top: 100px;
@@ -310,6 +310,10 @@ footer {
   /* .items-footer{
     width: calc(100% / 3);
   } */
+  .generic-item{
+    width: calc(100% / 2);
+    margin-top: 100px;
+}
 
  .main-nav{
    width: 100px;
